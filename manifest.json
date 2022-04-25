@@ -5,13 +5,7 @@
   "version": "6.5.5",
   "manifest_version": 2,
   "icons": {
-    "16": "/images/lionelicon16.png",
-    "32": "/images/lionelicon32.png",
-    "45": "/images/lionelicon45.png",
-    "48": "/images/lionelicon48.png",
-    "64": "/images/lionelicon64.png",
-    "128": "/images/lionelicon128.png",
-    "180": "/images/lionelicon180.png"
+    "16": "lion.svg"
   },
   "content_scripts": [
     {
@@ -23,13 +17,7 @@
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "/images/lionelicon16.png",
-      "32": "/images/lionelicon32.png",
-      "45": "/images/lionelicon45.png",
-      "48": "/images/lionelicon48.png",
-      "64": "/images/lionelicon64.png",
-      "128": "/images/lionelicon128.png",
-      "180": "/images/lionelicon180.png"
+      "16": "lion.svg"
     },
     "browser_style": true,
     "default_title": "LionelLogin"
