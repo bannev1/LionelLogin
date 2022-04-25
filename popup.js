@@ -1,4 +1,4 @@
-chrome.storage.sync.get(['locked'], function(result) {
+browser.storage.local.get(['locked'], function(result) {
   if (!(typeof result.locked === 'undefined')) {
     if (result.locked === true) {
       document.getElementById("login").style.display = 'none'
@@ -7,7 +7,7 @@ chrome.storage.sync.get(['locked'], function(result) {
   }
 });
 
-chrome.storage.sync.get(['pass'], function(result) {
+browser.storage.local.get(['pass'], function(result) {
   if (!(typeof result.pass === 'undefined')) {
     document.getElementById('password').value = result.pass;
   }
@@ -18,9 +18,9 @@ document.getElementById("submit").addEventListener("click", submit);
 function submit() {
   let password = document.getElementById("password").value;
 
-  chrome.storage.sync.set({'pass': password});
+  browser.storage.local.set({'pass': password});
   
-  chrome.storage.sync.get(['pass'], function(result) {
+  browser.storage.local.get(['pass'], function(result) {
     console.log(result.pass);
   });
 }
@@ -31,12 +31,12 @@ function openOptions() {
   chrome.runtime.openOptionsPage()
 }
 
-chrome.storage.sync.get('active', function(result) {
+browser.storage.local.get('active', function(result) {
   if (typeof result.active === 'undefined') {
     changeCheckbox(true);
-    chrome.storage.sync.set({'active': true});
+    browser.storage.local.set({'active': true});
   } else {
-    chrome.storage.sync.get(['active'], function(data) {
+    browser.storage.local.get(['active'], function(data) {
       changeCheckbox(data.active);
     });
   }
@@ -46,10 +46,10 @@ const checkbox = document.getElementById('checkActive')
 
 checkbox.addEventListener('change', (event) => {
   if (event.currentTarget.checked) {
-    chrome.storage.sync.set({'active': true});
+    browser.storage.local.set({'active': true});
     changeCheckbox(true);
   } else {
-    chrome.storage.sync.set({'active': false});
+    browser.storage.local.set({'active': false});
     changeCheckbox(false);
   }
 })

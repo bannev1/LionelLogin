@@ -1,11 +1,9 @@
 {
-  "name": "LionelLogin",
-  "description": "Auto-login to Lionel2 - More information here: https://bit.ly/370jL6J",
+  "name": "LionelLogin - Firefox",
+  "description": "Auto-login to Lionel2 on Firefox - More information here: https://bit.ly/370jL6J",
+  "homepage_url": "https://bit.ly/370jL6J",
   "version": "6.5.5",
-  "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
+  "manifest_version": 2,
   "icons": {
     "16": "/images/lionelicon16.png",
     "32": "/images/lionelicon32.png",
@@ -15,7 +13,14 @@
     "128": "/images/lionelicon128.png",
     "180": "/images/lionelicon180.png"
   },
-  "action": {
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://lionel2.kgv.edu.hk/login/index.php*"],
+      "js": ["login.js"]
+    }
+  ],
+  "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "/images/lionelicon16.png",
@@ -25,16 +30,13 @@
       "64": "/images/lionelicon64.png",
       "128": "/images/lionelicon128.png",
       "180": "/images/lionelicon180.png"
-    }
+    },
+    "browser_style": true,
+    "default_title": "LionelLogin"
   },
-  "permissions": ["storage", "activeTab", "scripting", "tabs", "webRequest"],
-  "host_permissions": ["https://lionel2.kgv.edu.hk/login/index.php"],
-  "content_scripts": [
-    {
-      "run_at": "document_end",
-      "matches": ["https://lionel2.kgv.edu.hk/login/index.php*"],
-      "js": ["login.js"]
-    }
-  ],
-  "options_page": "options.html"
+  "permissions": ["storage", "activeTab", "tabs", "webRequest"],
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  }
 }
