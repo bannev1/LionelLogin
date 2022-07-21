@@ -1,8 +1,8 @@
 {
   "name": "LionelLogin - Firefox",
-  "description": "Auto-login to Lionel2 on Firefox - More information here: https://bit.ly/370jL6J",
+  "description": "Auto-login to Lionel2 for Firefox - More information here: https://bit.ly/370jL6J",
   "homepage_url": "https://bit.ly/370jL6J",
-  "version": "6.5.5",
+  "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
     "16": "lion.svg"
