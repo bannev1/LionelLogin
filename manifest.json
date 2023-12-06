@@ -1,5 +1,5 @@
 {
-  "name": "LionelLogin - Firefox",
+  "name": "LionelLogin",
   "description": "Auto-login to Lionel2 for Firefox - More information here: https://bit.ly/370jL6J",
   "homepage_url": "https://bit.ly/370jL6J",
   "version": "1.0.0",
@@ -26,10 +26,5 @@
   "options_ui": {
     "page": "options.html",
     "browser_style": true
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "extension@xScruffers.github.com"
-    }
   }
 }
