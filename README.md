@@ -48,7 +48,7 @@ The recommended method for installation would be to simply follow the instructio
 
 #### Direct Download
 
-To download the files directly, visit [this Google Drive folder](https://drive.google.com/drive/folders/1ALK145-sYK2wC3_ZUd23aYMAhC6JSG3O?usp=sharing), select on either `LionelLogin` or `LionelLogin - Firefox` depending of the version you wish to install, right-click the version you wish to install, and download the folder/file. *Please note that version `1.0.0` of the LionelLogin extension *(for Chrome)* is no longer made publicly accessible due to **dangerous security flaws***. For a more detailed tutorial on installation, feel free to look through the tutorial [here](https://github.com/realhuman101/projectDocs/tree/master/LionelLogin/installation/chrome/direct#lionellogin---chrome-direct-installation-instructions)
+To download the files directly, visit [this Google Drive folder](https://drive.google.com/drive/folders/1Fdvf5XMKoZpoxU-0YezVKRM6Ve97YVmN?usp=drive_link), select one of the folders named `LionelLogin v_._._` (where the `_`/underscores are actual version numbers), right-click the folder/version you wish to install, and download the folder/file. *Please note that version `1.0.0` of the LionelLogin extension (for Chrome) is no longer made publicly accessible due to **dangerous security flaws***. For a more detailed tutorial on installation, feel free to look through the tutorial [here](https://github.com/realhuman101/projectDocs/tree/master/LionelLogin/installation/chrome/direct#lionellogin---chrome-direct-installation-instructions)
 
 #### Download with Git
 
