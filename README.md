@@ -56,7 +56,14 @@ Run the command `git clone https://github.com/realhuman101/LionelLogin.git`
 
 ### Firefox Installation
 
-To install the extension on Firefox, simply just click on this link [here](https://addons.mozilla.org/firefox/downloads/file/4205166/b85585d2df5e4832b083-1.0.0.xpi). It will prompt you if you wish to install the extension. Press `OK` to accept, and it will automatically install.
+To install the extension on Firefox, follow the instructions below: 
+1. Download [this file](https://drive.google.com/file/d/1QDiiDNkbuauu81x0RrBhl8oWOhEM4Vxn/view?usp=drive_link).
+2. Go to `about:addons` in Firefox. (Open this page on a new tab)
+3. Open the `Extensions` tab by clicking it on the sidebar on the left
+4. Press the settings button in the top-right corner of the page
+5. Press `Install addons from file...`
+6. Select the recently installed file. (The file installed from step 1)
+Done!
 
 ## Browser Information
 
