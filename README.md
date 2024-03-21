@@ -11,7 +11,7 @@ Essentially a quick password manager as a web browser extension *(works on Chrom
 	- [Safety Concerns](#safety-concerns)
 	- [Bugs](#bugs)
 	- [Installation](#installation)
-		- [Google Chrome Installation](#google-chrome-installation)
+		- [Chromium Installation](#chromium-installation)
 			- [Direct Download](#direct-download)
 			- [Download with Git](#download-with-git)
 		- [Firefox Installation](#firefox-installation)
@@ -41,9 +41,9 @@ If you locate any bugs or dangerous glitches, please report them by creating a n
 
 ## Installation
 
-### Google Chrome Installation
+### Chromium Installation
 
-There are two methods of installation for **Chrome**, either through [Git](https://github.com/realhuman101/LionelLogin#download-with-git) or by downloading the compressed file from [Google Drive](https://github.com/realhuman101/LionelLogin#direct-download).  
+There are two methods of installation for **Chrome** or any other Chromium-based browser (e.g Opera, Brave, etc), either through [Git](https://github.com/realhuman101/LionelLogin#download-with-git) or by downloading the compressed file from [Google Drive](https://github.com/realhuman101/LionelLogin#direct-download).  
 The recommended method for installation would be to simply follow the instructions at [LionelLogin Instructions - Chrome Direct Installation](https://github.com/realhuman101/projectDocs/tree/master/LionelLogin/installation/chrome/direct#lionellogin---chrome-direct-installation-instructions).
 
 #### Direct Download
@@ -67,4 +67,4 @@ Done!
 
 ## Browser Information
 
-Currently only two browsers have been tested and work with LionelLogin, Chrome *(best support)* and Firefox.
+Currently only three browsers have been tested and work with LionelLogin, Chrome *(best support)*, Firefox and Opera.
