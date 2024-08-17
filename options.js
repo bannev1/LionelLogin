@@ -93,6 +93,12 @@ chrome.storage.sync.get('pass', function(result) {
   }
 });
 
+chrome.storage.sync.get('sessLogin', function(result) {
+  if (typeof result.sessLogin !== 'undefined') {
+    document.getElementById("sessionLogin").checked = result.sessLogin;
+  }
+});
+
 const lockbox = document.getElementById('lockPassword')
 
 lockbox.addEventListener('change', (event) => {
@@ -162,3 +168,10 @@ document.getElementById("passwordCheckSubmit").addEventListener("click", functio
     }
   });
 });
+
+document.getElementById("sessionLogin").addEventListener("click", () => {
+  var state = document.getElementById("sessionLogin").checked;
+  chrome.storage.sync.get('sessLogin', function (result) {
+    result.sessLogin(state);
+  });
+})

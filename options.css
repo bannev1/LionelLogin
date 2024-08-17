@@ -140,7 +140,7 @@ input:checked + .slider:before {
   vertical-align: bottom;
 }
 
-.inputUsername {
+.inputUsername, .sessionLogin {
   padding: 12px 20px;
 }
 
